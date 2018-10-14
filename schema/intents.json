@@ -1,0 +1,153 @@
+[
+    {
+        "name": "greet",
+        "auto": true,
+        "contexts": [],
+        "templates": [],
+        "userSays": [
+            {
+                "data": [
+                    {
+                        "text": "hi",
+                        "userDefined": false
+                    }
+                ],
+                "isTemplate": false,
+                "count": 0
+            },
+            {
+                "data": [
+                    {
+                        "text": "hello",
+                        "userDefined": false
+                    }
+                ],
+                "isTemplate": false,
+                "count": 0
+            }
+        ],
+        "responses": [
+            {
+                "action": "greet",
+                "resetContexts": false,
+                "affectedContexts": [],
+                "parameters": [],
+                "messages": []
+            }
+        ],
+        "priority": 500000,
+        "fallbackIntent": false,
+        "webhookUsed": true,
+        "webhookForSlotFilling": true,
+        "events": [],
+        "id": "7d2994b7-c96f-4fe6-be2c-b46dae46e8cd"
+    },
+    {
+        "name": "startCooking",
+        "auto": true,
+        "contexts": [],
+        "templates": [],
+        "userSays": [
+            {
+                "data": [
+                    {
+                        "text": "We need to make "
+                    },
+                    {
+                        "text": "lunch",
+                        "meta": "@meal_type",
+                        "alias": "meal_type",
+                        "userDefined": true
+                    },
+                    {
+                        "text": " for "
+                    },
+                    {
+                        "text": "10",
+                        "meta": "@sys.cardinal",
+                        "alias": "cardinal",
+                        "userDefined": true
+                    },
+                    {
+                        "text": " people in "
+                    },
+                    {
+                        "text": "45 minutes",
+                        "meta": "@sys.duration",
+                        "alias": "duration",
+                        "userDefined": true
+                    }
+                ],
+                "isTemplate": false,
+                "count": 0
+            },
+            {
+                "data": [
+                    {
+                        "text": "We need to make breakfast for "
+                    },
+                    {
+                        "text": "9",
+                        "meta": "@sys.cardinal",
+                        "alias": "cardinal",
+                        "userDefined": true
+                    },
+                    {
+                        "text": " people in "
+                    },
+                    {
+                        "text": "1 hour",
+                        "meta": "@sys.duration",
+                        "alias": "duration",
+                        "userDefined": true
+                    }
+                ],
+                "isTemplate": false,
+                "count": 0
+            }
+        ],
+        "responses": [
+            {
+                "action": "start_cooking",
+                "resetContexts": false,
+                "affectedContexts": [],
+                "parameters": [
+                    {
+                        "name": "duration",
+                        "value": "$duration",
+                        "dataType": "@sys.duration",
+                        "prompts": [],
+                        "required": true,
+                        "isList": false,
+                        "defaultValue": ""
+                    },
+                    {
+                        "name": "cardinal",
+                        "value": "$cardinal",
+                        "dataType": "@sys.cardinal",
+                        "prompts": [],
+                        "required": true,
+                        "isList": false,
+                        "defaultValue": ""
+                    },
+                    {
+                        "name": "meal_type",
+                        "value": "$meal_type",
+                        "dataType": "@meal_type",
+                        "prompts": [],
+                        "required": true,
+                        "isList": false,
+                        "defaultValue": ""
+                    }
+                ],
+                "messages": []
+            }
+        ],
+        "priority": 500000,
+        "fallbackIntent": false,
+        "webhookUsed": true,
+        "webhookForSlotFilling": true,
+        "events": [],
+        "id": "562f9d48-cf42-4aff-b95f-58f415405ed7"
+    }
+]

@@ -1,0 +1,58 @@
+# Template for defining UserSays examples
+
+# give-color-intent:
+
+#  UserSays:
+#    - My color is blue
+#    - red is my favorite color
+
+#  Annotations:
+#    - blue: sys.color     # maps param value -> entity
+#    - red: sys.color
+
+#  Events:
+#    - event1              # adds a triggerable event named 'event1' to the intent
+
+greet:
+  UserSays:
+    - hi
+    - hello
+
+
+startCooking:
+  UserSays:
+  - We need to make lunch for 10 people in 45 minutes
+  - We need to make breakfast for 9 people in 1 hour
+
+  Annotations:
+  - 10: sys.cardinal
+  - ten: sys.cardinal
+  - 9: sys.cardinal
+  - nine: sys.cardinal
+  - 45 minutes: sys.duration
+  - 1 hour: sys.duration
+  - lunch: meal_type
+
+
+#startCooking:
+# UserSays:
+# - one person
+# - just one
+# - two people
+# - three people
+# - 2
+# - 1
+# Annotations:
+# - one: sys.number
+# - 1: sys.number-integer
+# - 2: sys.number-integer
+# - two: sys.number
+
+# startCooking:
+#   UserSays:
+#   - 20 minutes
+#   - thirteen minutes
+#
+#   Annotations:
+#   - 20: sys.number-integer
+#   - thirteen: sys.number

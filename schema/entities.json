@@ -1,0 +1,34 @@
+[
+    {
+        "name": "meal_type",
+        "entries": [
+            {
+                "value": "lunch",
+                "synonyms": [
+                    "lunch"
+                ]
+            },
+            {
+                "value": "breakfast",
+                "synonyms": [
+                    "breakfast"
+                ]
+            },
+            {
+                "value": "dinner",
+                "synonyms": [
+                    "dinner",
+                    "supper"
+                ]
+            },
+            {
+                "value": "snack",
+                "synonyms": [
+                    "snack"
+                ]
+            }
+        ],
+        "isEnum": null,
+        "id": "9ad33eec-f4dc-4f40-892c-336fb85f32d1"
+    }
+]
