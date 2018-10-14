@@ -1,4 +1,3 @@
-import random
 import database
 import numpy as np
 
