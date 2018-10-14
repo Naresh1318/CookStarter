@@ -28,7 +28,7 @@ def start_cooking(duration, people, meal_type):
     for i in range(3):
         inventory = list(database.generate_test_inventory().keys())
         random.shuffle(inventory)
-        spoon = SpoonacularAPI(inventory[:keep_items])
+        spoon = SpoonacularAPI(inventory)
         recipes.append(spoon.recipes[0])
 
     synonyms = [['one', 'number one', 'first option'],
