@@ -4,7 +4,7 @@ import numpy as np
 from spoonacular_api import SpoonacularAPI
 
 from flask import Flask
-from flask_assistant import Assistant, ask, tell, build_item
+from flask_assistant import Assistant, ask, tell
 
 
 app = Flask(__name__)
