@@ -23,13 +23,11 @@ def greet():
 def start_cooking(duration, people, meal_type):
     # Pick the top three recipes for the ingredients list
     global recipes
-    keep_items = 10
-    recipes = []
-    for i in range(3):
-        inventory = list(database.generate_test_inventory().keys())
-        random.shuffle(inventory)
-        spoon = SpoonacularAPI(inventory[:keep_items])
-        recipes.append(spoon.recipes[0])
+    keep_recipes = 3
+    inventory = list(database.generate_test_inventory().keys())
+    random.shuffle(inventory)
+    spoon = SpoonacularAPI(inventory[:10], _num_recipes=15)
+    recipes = spoon.recipes[:keep_recipes]
 
     synonyms = [['one', 'number one', 'first option'],
                 ['two', 'number two', 'second option'],
