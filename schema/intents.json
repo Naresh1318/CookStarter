@@ -149,5 +149,37 @@
         "webhookForSlotFilling": true,
         "events": [],
         "id": "562f9d48-cf42-4aff-b95f-58f415405ed7"
+    },
+    {
+        "name": "select",
+        "auto": true,
+        "contexts": [],
+        "templates": [],
+        "userSays": [],
+        "responses": [
+            {
+                "action": "select_recipe",
+                "resetContexts": false,
+                "affectedContexts": [],
+                "parameters": [
+                    {
+                        "name": "any",
+                        "value": "$any",
+                        "dataType": "@sys.any",
+                        "prompts": [],
+                        "required": true,
+                        "isList": false,
+                        "defaultValue": ""
+                    }
+                ],
+                "messages": []
+            }
+        ],
+        "priority": 500000,
+        "fallbackIntent": false,
+        "webhookUsed": true,
+        "webhookForSlotFilling": true,
+        "events": [],
+        "id": "88517d52-648e-40f6-b1b0-9421a096126a"
     }
 ]

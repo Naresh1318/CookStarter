@@ -34,6 +34,23 @@ startCooking:
   - lunch: meal_type
 
 
+seslect:
+  UserSays:
+  - one
+  - 1
+  - two
+  - three
+  - 3
+  - any thing
+
+  Annotations:
+  - one: sys.cardinal
+  - three: sys.cardinal
+  - 1: sys.cardinal
+  - 3: sys.cardinal
+  - any thing: sys.any
+
+
 #startCooking:
 # UserSays:
 # - one person
