@@ -15,4 +15,4 @@
     * Potential ingredients to buy
 - [ ] Gavin -> Recipes database
 
-- [ ] Naresh -> Looking at basic alexa skills
+- [ ] Naresh -> Looking at basic Google Actions
